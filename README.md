@@ -6,13 +6,45 @@
 
 VuongCoffee là một trang web thương mại điện tử chuyên cung cấp các sản phẩm cà phê chất lượng cao. Trang web được xây dựng trên nền tảng Laravel, một framework PHP mạnh mẽ và linh hoạt, giúp việc phát triển trở nên dễ dàng và thú vị hơn.
 
-## Chức năng chính
+## Hệ thống Quản lý Sản phẩm và Đơn hàng
 
-- **Quản lý sản phẩm**: Cho phép quản trị viên thêm, chỉnh sửa và xóa sản phẩm.
-- **Quản lý đơn hàng**: Người dùng có thể đặt hàng, xem lịch sử đơn hàng và theo dõi trạng thái đơn hàng.
-- **Đánh giá sản phẩm**: Người dùng có thể đánh giá và nhận xét về các sản phẩm đã mua.
-- **Quản lý người dùng**: Hỗ trợ đăng ký, đăng nhập, chỉnh sửa hồ sơ và đổi mật khẩu.
-- **Quản lý giao dịch**: Quản trị viên có thể theo dõi và quản lý các giao dịch tài chính.
+Hệ thống này giúp quản lý sản phẩm, đơn hàng và các giao dịch của người dùng, với phân quyền rõ ràng giữa **Admin** và **Guest**. Admin có quyền quản lý đầy đủ các chức năng của hệ thống, trong khi Guest có quyền truy cập vào các tính năng cơ bản.
+
+### **Chức năng chung** (Cả Admin và Guest đều có)
+- **Đăng nhập**: Người dùng có thể đăng nhập vào hệ thống.
+- **Đăng ký**: Người dùng có thể đăng ký tài khoản mới.
+- **Chỉnh sửa hồ sơ**: Người dùng có thể cập nhật thông tin cá nhân.
+- **Đổi mật khẩu**: Người dùng có thể thay đổi mật khẩu tài khoản.
+
+---
+
+### **Phân quyền**
+
+#### **Admin**
+Admin có quyền quản lý toàn bộ hệ thống và thực hiện các chức năng sau:
+1. **Quản lý sản phẩm**: 
+   - Thêm, sửa, xóa sản phẩm.
+2. **Quản lý doanh thu**: 
+   - Xem biểu đồ doanh thu.
+   - Thêm các khoản phí cố định.
+3. **Quản lý khách hàng**: 
+   - Xem danh sách và thông tin của khách hàng.
+4. **Quản lý đơn hàng**: 
+   - Xác nhận, từ chối, sửa đổi, và xem lịch sử của tất cả các đơn hàng.
+
+#### **Guest**
+Guest có quyền truy cập các chức năng sau:
+1. **Quản lý đơn hàng**:
+   - Thêm, sửa, hủy đơn hàng.
+2. **Đánh giá sản phẩm**:
+   - Đánh giá và bình luận về sản phẩm đã mua.
+   - Sửa đánh giá đã gửi.
+3. **Xem sản phẩm**:
+   - Xem thông tin chi tiết sản phẩm và giá.
+4. **Lịch sử đơn hàng**:
+   - Xem lại các đơn hàng đã được thực hiện trước đây.
+
+---
 
 ## Hướng dẫn cài đặt
 
@@ -71,14 +103,7 @@ VuongCoffee là một trang web thương mại điện tử chuyên cung cấp c
 - [Laravel Bootcamp](https://bootcamp.laravel.com)
 - [Laracasts](https://laracasts.com)
 
-## Đóng góp
-
-Chúng tôi hoan nghênh mọi đóng góp từ cộng đồng. Nếu bạn muốn đóng góp, vui lòng fork repository này và gửi pull request.
-
 ## Liên hệ
+<a href = 'https://github.com/Khanhs3043' >Đào Mạnh Vương - 23010586</a>
+<p>I'M from PHENIKAA UNIVERSITY</p>
 
-Nếu bạn có bất kỳ câu hỏi hoặc phản hồi nào, vui lòng liên hệ với chúng tôi: [@Vuong](https://www.facebook.com/hvuong205)
-
----
-
-Cảm ơn bạn đã sử dụng VuongCoffee!
